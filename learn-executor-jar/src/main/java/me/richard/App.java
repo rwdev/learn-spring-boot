@@ -17,7 +17,10 @@ public class App {
 
 	@Scheduled(fixedRate = 1000)
 	public void tick() {
-		System.out.println("current time:" + LocalDateTime.now());
+		for (int i = 0; i < 10000; i++) {
+			String currentSecond = LocalDateTime.now().toString();
+			System.out.println(currentSecond);
+		}
 	}
 
 }
